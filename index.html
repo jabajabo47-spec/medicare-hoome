@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="fr" id="html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEDICARE HOMME — Studio Masculin · Alger</title>
+<meta name="description" content="Medicare Homme — Studio masculin exclusif à Alger. Épilation laser Soprano Titanium, Carbon Peel, Hydra Facial, Détatouage.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    /* NEW dark luxury palette — totally different from Medicare Clinic */
+    --bg:#0f0d0a;
+    --bg-2:#181511;
+    --bg-3:#201c17;
+    --card:#1a1612;
+    --surface:#242019;
+    --cream:#f5ecd9;
+    --cream-dim:#c9bfa7;
+    --text:#e8dcc4;
+    --text-dim:#9a8f78;
+    --muted:#6b6454;
+    --border:rgba(245,236,217,.08);
+    --border-strong:rgba(245,236,217,.15);
+    --gold:#d4a24c;
+    --gold-bright:#f0c268;
+    --gold-soft:rgba(212,162,76,.12);
+    --accent:#c9a870;
+    --success:#7eb063;
+    --danger:#e07373;
+    --shadow:0 20px 60px rgba(0,0,0,.4);
+    --shadow-lg:0 30px 80px rgba(0,0,0,.6);
+    --radius:20px;--radius-lg:32px;--radius-sm:14px;
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Inter','Helvetica Neue',Arial,sans-serif;
+    --arabic:'Tajawal',sans-serif;
+    --trans:cubic-bezier(.22,.8,.3,1);
+  }
+  html{scroll-behavior:smooth}
+  html[dir="rtl"]{direction:rtl}
+  html[dir="rtl"] body{font-family:var(--arabic)}
+  body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-weight:400}
+  img{max-width:100%;display:block;height:auto}
+  a{color:inherit;text-decoration:none;transition:all .3s var(--trans)}
+  button{font-family:inherit;cursor:pointer}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 20px}}
+
+  html[lang="fr"] [data-ar]{display:none}
+  html[lang="ar"] [data-fr]{display:none}
+  .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1.1;color:var(--cream)}
+  html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4{font-family:var(--arabic);font-weight:800;line-height:1.3}
+
+  .eyebrow{display:inline-block;font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
+  html[lang="ar"] .eyebrow{font-family:var(--arabic);letter-spacing:1.5px;font-size:13px;font-weight:700}
+
+  /* TOP BAR */
+  .topbar{background:var(--bg-2);padding:10px 0;font-size:12px;color:var(--text-dim);border-bottom:1px solid var(--border)}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .topbar .phones{display:flex;gap:16px;align-items:center}
+  .topbar .phones a{display:inline-flex;align-items:center;gap:8px;color:var(--cream);font-weight:600}
+  .topbar .phones a:hover{color:var(--gold)}
+  .topbar .wa-top{display:inline-flex;align-items:center;gap:6px;background:#25d366;color:white!important;padding:5px 12px;border-radius:50px;font-weight:600;font-size:11px}
+  .topbar .wa-top:hover{background:#1ba550}
+
+  /* NAV */
+  nav{background:rgba(15,13,10,.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:16px 0;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--border);transition:all .3s}
+  nav.scrolled{padding:10px 0;background:rgba(15,13,10,.95)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  nav .brand{display:flex;align-items:center;gap:12px}
+  nav .brand img{height:52px;width:52px;border-radius:50%;transition:all .3s;object-fit:cover}
+  nav.scrolled .brand img{height:44px;width:44px}
+  nav .brand .brand-text{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--cream);letter-spacing:.5px;line-height:1.1}
+  nav .brand .brand-text small{display:block;font-size:9px;letter-spacing:3px;color:var(--gold);font-weight:600;margin-top:2px;text-transform:uppercase}
+  html[lang="ar"] nav .brand .brand-text{font-family:var(--arabic);font-weight:700}
+  .nav-links{display:flex;gap:30px;font-size:13px;font-weight:500;letter-spacing:.5px}
+  .nav-links a{color:var(--text-dim)}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-right{display:flex;gap:10px;align-items:center}
+  .lang-switch{background:transparent;color:var(--cream);border:1px solid var(--border-strong);padding:8px 16px;border-radius:50px;font-size:11px;font-weight:600;letter-spacing:1px}
+  .lang-switch:hover{border-color:var(--gold);color:var(--gold)}
+  .nav-cta{background:var(--gold);color:var(--bg);padding:12px 24px;border-radius:50px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  .nav-cta:hover{background:var(--gold-bright);transform:translateY(-1px)}
+  .burger{background:transparent;border:1px solid var(--border-strong);color:var(--cream);font-size:18px;width:40px;height:40px;border-radius:50%;display:none;align-items:center;justify-content:center}
+  @media(max-width:900px){.nav-links{display:none}.nav-cta{display:none}.burger{display:inline-flex}.brand .brand-text{display:none}}
+
+  /* HERO — full image background with overlay */
+  .hero{min-height:85vh;padding:80px 0 60px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,var(--bg-3) 100%)}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,var(--gold-soft) 0%,transparent 50%);opacity:.5}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+  @media(max-width:900px){.hero-wrap{grid-template-columns:1fr;gap:48px;text-align:center}}
+  .hero-text h1{font-size:clamp(50px,7.5vw,100px);font-weight:400;letter-spacing:-.03em;line-height:.96;margin-bottom:32px;color:var(--cream)}
+  .hero-text h1 em{font-family:var(--serif);font-style:italic;color:var(--gold);font-weight:400}
+  html[lang="ar"] .hero-text h1 em{font-style:normal;font-weight:800}
+  .hero-text .lead{font-size:18px;color:var(--text-dim);margin-bottom:40px;max-width:520px;line-height:1.75}
+  @media(max-width:900px){.hero-text .lead{margin-left:auto;margin-right:auto}}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  @media(max-width:900px){.hero-ctas{justify-content:center}}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:50px;font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;transition:all .3s var(--trans);cursor:pointer;border:none}
+  html[lang="ar"] .btn{font-family:var(--arabic);font-size:14px;letter-spacing:.5px}
+  .btn-primary{background:var(--gold);color:var(--bg)}
+  .btn-primary:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-outline{background:transparent;color:var(--cream);border:1.5px solid var(--border-strong)}
+  .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-wa{background:#25d366;color:var(--white)}
+  .btn-wa:hover{background:#1ba550}
+  .btn-lg{padding:20px 40px;font-size:14px}
+
+  .hero-visual{display:flex;justify-content:center;align-items:center;position:relative}
+  .hero-logo{width:380px;height:380px;border-radius:50%;background:var(--card);box-shadow:0 30px 80px rgba(0,0,0,.6),inset 0 0 0 1px var(--gold-soft);padding:30px;position:relative}
+  @media(max-width:600px){.hero-logo{width:260px;height:260px;padding:20px}}
+  .hero-logo::after{content:'';position:absolute;inset:-20px;border:1px solid var(--gold-soft);border-radius:50%;pointer-events:none}
+  .hero-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+
+  /* TRUST STRIP */
+  .trust{background:var(--bg-2);padding:36px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .trust .wrap{display:flex;justify-content:space-around;align-items:center;gap:30px;flex-wrap:wrap}
+  .trust-item{text-align:center}
+  .trust-item .n{font-family:var(--serif);font-size:34px;color:var(--gold);font-weight:500;line-height:1;margin-bottom:6px}
+  .trust-item .l{color:var(--text-dim);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+  html[lang="ar"] .trust-item .l{font-family:var(--arabic);letter-spacing:.5px;font-size:12px}
+
+  section{padding:100px 0}
+  @media(max-width:700px){section{padding:72px 0}}
+
+  /* SERVICES — editorial cards */
+  .services{background:var(--bg)}
+  .services-head{text-align:center;max-width:680px;margin:0 auto 60px}
+  .services-head h2{font-size:clamp(34px,5vw,52px);font-weight:500;margin-bottom:16px}
+  .services-head h2 em{font-family:var(--serif);font-style:italic;color:var(--gold);font-weight:400}
+  html[lang="ar"] .services-head h2 em{font-style:normal;font-weight:800}
+  .services-head p{color:var(--text-dim);font-size:16px;line-height:1.7}
+
+  .service-block{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--card);
+    border-radius:var(--radius-lg);overflow:hidden;margin-bottom:28px;
+    border:1px solid var(--border);transition:all .4s var(--trans);
+  }
+  .service-block:hover{border-color:var(--gold-soft);transform:translateY(-4px);box-shadow:var(--shadow)}
+  @media(max-width:860px){.service-block{grid-template-columns:1fr}}
+  .service-block.rev{direction:ltr}
+  .service-block.rev .svc-img{order:2}
+  @media(max-width:860px){.service-block.rev .svc-img{order:0}}
+
+  .svc-img{position:relative;min-height:400px;overflow:hidden;background:var(--bg-3)}
+  .svc-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .8s var(--trans)}
+  .service-block:hover .svc-img img{transform:scale(1.05)}
+  .svc-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,13,10,.2) 0%,rgba(15,13,10,.6) 100%)}
+  .svc-tag{position:absolute;top:24px;left:24px;background:var(--gold);color:var(--bg);padding:6px 14px;border-radius:50px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;z-index:2}
+  html[dir="rtl"] .svc-tag{left:auto;right:24px}
+  html[lang="ar"] .svc-tag{font-family:var(--arabic);letter-spacing:.5px;font-size:12px}
+  .svc-num{position:absolute;bottom:24px;right:24px;font-family:var(--serif);font-size:72px;color:var(--cream);opacity:.4;line-height:1;font-style:italic;z-index:2;font-weight:500}
+  html[dir="rtl"] .svc-num{right:auto;left:24px}
+
+  .svc-body{padding:48px;display:flex;flex-direction:column;justify-content:center}
+  @media(max-width:600px){.svc-body{padding:32px 24px}}
+  .svc-body h3{font-family:var(--serif);font-size:38px;font-weight:500;margin-bottom:14px;color:var(--cream)}
+  html[lang="ar"] .svc-body h3{font-family:var(--arabic);font-weight:700;font-size:32px}
+  .svc-body h3 em{font-style:italic;color:var(--gold);font-weight:500}
+  html[lang="ar"] .svc-body h3 em{font-style:normal;font-weight:800}
+  .svc-body > p{color:var(--text-dim);font-size:15px;line-height:1.75;margin-bottom:24px}
+  .svc-body .benefits{margin-bottom:24px}
+  .svc-body .benefits h4{font-family:var(--sans);font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:14px}
+  html[lang="ar"] .svc-body .benefits h4{font-family:var(--arabic);letter-spacing:1.5px;font-size:13px}
+  .svc-body .benefits ul{list-style:none;color:var(--text);font-size:14px;line-height:1.9}
+  .svc-body .benefits li{padding-left:24px;position:relative;margin-bottom:4px}
+  html[dir="rtl"] .svc-body .benefits li{padding-left:0;padding-right:24px}
+  .svc-body .benefits li::before{content:'';position:absolute;left:0;top:10px;width:14px;height:1px;background:var(--gold)}
+  html[dir="rtl"] .svc-body .benefits li::before{left:auto;right:0}
+
+  .svc-price{display:flex;align-items:baseline;gap:12px;padding:20px 0;border-top:1px solid var(--border);margin-bottom:22px}
+  .svc-price .l{color:var(--text-dim);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+  html[lang="ar"] .svc-price .l{font-family:var(--arabic);letter-spacing:.5px;font-size:12px}
+  .svc-price .amt{font-family:var(--serif);font-size:32px;color:var(--gold);font-weight:500}
+  .svc-price .pu{color:var(--text-dim);font-size:13px}
+  .svc-price .pold{text-decoration:line-through;color:var(--muted);font-size:14px;margin-left:8px}
+  html[dir="rtl"] .svc-price .pold{margin-left:0;margin-right:8px}
+
+  .svc-ctas{display:flex;gap:10px;flex-wrap:wrap}
+
+  /* Expandable price details */
+  .svc-details{margin-top:18px}
+  .svc-details summary{cursor:pointer;list-style:none;color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;user-select:none}
+  html[lang="ar"] .svc-details summary{font-family:var(--arabic);letter-spacing:.5px;font-size:13px}
+  .svc-details summary::-webkit-details-marker{display:none}
+  .svc-details summary::after{content:'+';font-size:18px;transition:transform .3s}
+  .svc-details[open] summary::after{transform:rotate(45deg)}
+  .svc-details .panel{margin-top:16px;padding:16px;background:var(--bg-2);border-radius:var(--radius-sm);border:1px solid var(--border)}
+  .svc-tabs{display:flex;gap:4px;margin-bottom:14px;background:var(--bg-3);padding:4px;border-radius:50px;width:fit-content}
+  .svc-tab{background:transparent;border:none;color:var(--text-dim);padding:8px 20px;border-radius:50px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  html[lang="ar"] .svc-tab{font-family:var(--arabic);font-size:13px;letter-spacing:.5px}
+  .svc-tab.active{background:var(--gold);color:var(--bg)}
+  .svc-tabpanel{display:none}
+  .svc-tabpanel.active{display:block}
+  .prow{display:flex;justify-content:space-between;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--text)}
+  .prow:hover{background:var(--bg-3)}
+  .prow .n{font-family:var(--serif);font-size:16px;color:var(--cream)}
+  html[lang="ar"] .prow .n{font-family:var(--arabic);font-weight:600;font-size:14px}
+  .prow .p{color:var(--gold);font-weight:700;font-family:var(--serif);font-size:16px;display:inline-flex;align-items:baseline;gap:8px}
+  .prow .pold{text-decoration:line-through;color:var(--muted);font-size:12px;font-weight:400}
+
+  /* FEATURED — TECH */
+  .featured{background:var(--bg-2);padding:100px 0;position:relative;overflow:hidden}
+  .featured::before{content:'';position:absolute;top:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,var(--gold-soft) 0%,transparent 70%);filter:blur(60px)}
+  .featured-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative}
+  @media(max-width:900px){.featured-wrap{grid-template-columns:1fr;gap:40px}}
+  .featured-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--card)}
+  .featured-img img{width:100%}
+  .featured-text h2{font-size:clamp(34px,4.5vw,52px);margin-bottom:20px}
+  .featured-text h2 em{font-style:italic;color:var(--gold)}
+  html[lang="ar"] .featured-text h2 em{font-style:normal}
+  .featured-text p{color:var(--text-dim);font-size:16px;line-height:1.75;margin-bottom:28px}
+  .featured-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+  .stat-mini{padding:22px;background:var(--card);border-radius:var(--radius-sm);border:1px solid var(--border)}
+  .stat-mini .n{font-family:var(--serif);font-size:34px;color:var(--gold);font-weight:500;line-height:1;margin-bottom:4px}
+  .stat-mini .l{color:var(--text-dim);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+  html[lang="ar"] .stat-mini .l{font-family:var(--arabic);letter-spacing:.5px;font-size:12px}
+
+  /* BOOKING */
+  .booking{background:var(--bg);position:relative;overflow:hidden}
+  .booking::before{content:'';position:absolute;bottom:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,var(--gold-soft) 0%,transparent 70%);filter:blur(60px)}
+  .booking .wrap{position:relative}
+  .booking-head{text-align:center;max-width:620px;margin:0 auto 50px}
+  .booking-head h2{font-size:clamp(34px,5vw,52px);margin-bottom:16px}
+  .booking-head h2 em{font-style:italic;color:var(--gold)}
+  html[lang="ar"] .booking-head h2 em{font-style:normal}
+  .booking-head p{color:var(--text-dim);font-size:16px;line-height:1.7}
+  .booking-form{max-width:640px;margin:0 auto;background:var(--card);padding:48px;border-radius:var(--radius-lg);border:1px solid var(--border)}
+  @media(max-width:600px){.booking-form{padding:28px 20px}}
+
+  .form-row{margin-bottom:20px}
+  .form-row .label{display:block;font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:10px}
+  html[lang="ar"] .form-row .label{font-family:var(--arabic);letter-spacing:1px;font-size:12px}
+  .form-row input,.form-row select,.form-row textarea{width:100%;padding:16px 20px;background:var(--bg-2);border:1.5px solid var(--border);border-radius:14px;font-family:var(--sans);font-size:15px;color:var(--text);transition:all .3s;font-weight:500;appearance:none;-webkit-appearance:none}
+  html[lang="ar"] .form-row input,html[lang="ar"] .form-row select,html[lang="ar"] .form-row textarea{font-family:var(--arabic);font-size:16px}
+  .form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;background:var(--bg-3);border-color:var(--gold)}
+  .form-row select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23d4a24c' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 20px center;padding-right:44px;cursor:pointer}
+  html[dir="rtl"] .form-row select{background-position:left 20px center;padding-right:20px;padding-left:44px}
+  .form-row textarea{min-height:80px;resize:vertical}
+  .form-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:500px){.form-two{grid-template-columns:1fr}}
+  .form-zones{display:none}
+  .form-zones.active{display:block}
+
+  .svc-choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:500px){.svc-choice{grid-template-columns:1fr}}
+  .sc-btn{background:var(--bg-2);border:1.5px solid var(--border);padding:16px 18px;border-radius:14px;cursor:pointer;text-align:left;transition:all .25s;font-family:inherit;color:var(--text)}
+  html[dir="rtl"] .sc-btn{text-align:right}
+  .sc-btn:hover{border-color:var(--gold);background:var(--bg-3)}
+  .sc-btn.selected{background:var(--gold-soft);border-color:var(--gold);color:var(--cream)}
+  .sc-btn .nm{font-family:var(--serif);font-size:17px;color:var(--cream);font-weight:500;margin-bottom:2px}
+  html[lang="ar"] .sc-btn .nm{font-family:var(--arabic);font-weight:700;font-size:15px}
+  .sc-btn .p{font-size:11px;color:var(--text-dim)}
+
+  .form-submit{width:100%;background:var(--gold);color:var(--bg);border:none;padding:18px;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-top:12px;transition:all .3s}
+  html[lang="ar"] .form-submit{font-family:var(--arabic);letter-spacing:.5px;font-size:15px}
+  .form-submit:hover{background:var(--gold-bright);transform:translateY(-2px)}
+
+  .form-success{display:none;text-align:center;padding:20px 0}
+  .form-success.show{display:block}
+  .form-success .check{width:80px;height:80px;background:rgba(126,176,99,.2);color:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:40px}
+  .form-success h3{font-family:var(--serif);font-size:28px;margin-bottom:10px;color:var(--cream)}
+  html[lang="ar"] .form-success h3{font-family:var(--arabic);font-weight:700}
+  .form-success h3 em{font-style:italic;color:var(--gold)}
+  html[lang="ar"] .form-success h3 em{font-style:normal;font-weight:800}
+  .form-success > p{color:var(--text-dim);font-size:14px;margin-bottom:20px}
+  .form-success .summary{background:var(--bg-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px;margin:20px auto;max-width:360px;text-align:left}
+  html[dir="rtl"] .form-success .summary{text-align:right}
+  .form-success .summary .r{display:flex;justify-content:space-between;padding:6px 0;font-size:13px}
+  .form-success .summary .r+.r{border-top:1px solid var(--border)}
+  .form-success .summary .k{color:var(--text-dim)}
+  .form-success .summary .v{color:var(--cream);font-weight:600}
+
+  /* CONTACT */
+  .contact{background:var(--bg-2)}
+  .contact-head{text-align:center;max-width:600px;margin:0 auto 50px}
+  .contact-head h2{font-size:clamp(34px,4.5vw,48px);margin-bottom:14px}
+  .contact-head h2 em{font-style:italic;color:var(--gold)}
+  html[lang="ar"] .contact-head h2 em{font-style:normal}
+  .contact-grid{max-width:880px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
+  .cc{background:var(--card);padding:36px;border-radius:var(--radius);border:1px solid var(--border);transition:all .3s}
+  .cc:hover{border-color:var(--gold-soft);transform:translateY(-4px)}
+  .cc .ico{width:52px;height:52px;background:var(--gold-soft);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px}
+  .cc h4{font-family:var(--serif);font-size:22px;color:var(--cream);margin-bottom:8px;font-weight:500}
+  html[lang="ar"] .cc h4{font-family:var(--arabic);font-weight:700}
+  .cc p{color:var(--text-dim);font-size:14px;margin-bottom:18px}
+  .cc .v{font-family:var(--serif);font-size:20px;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+  html[lang="ar"] .cc .v{font-family:var(--arabic);font-weight:700;font-size:18px}
+
+  /* FOOTER */
+  footer{background:var(--bg-2);padding:60px 0 30px;border-top:1px solid var(--border)}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px}
+  @media(max-width:700px){.foot-grid{grid-template-columns:1fr;gap:32px}}
+  .foot-brand{display:flex;align-items:flex-start;gap:16px;margin-bottom:16px}
+  .foot-brand img{width:70px;height:70px;border-radius:50%;object-fit:cover}
+  .foot-brand .btxt{font-family:var(--serif);font-size:22px;color:var(--cream);font-weight:600;line-height:1.2}
+  .foot-brand .btxt small{display:block;font-family:var(--sans);font-size:10px;color:var(--gold);letter-spacing:2px;margin-top:4px;text-transform:uppercase;font-weight:600}
+  .foot-txt p{color:var(--text-dim);font-size:13px;line-height:1.7;max-width:340px}
+  .foot-col h5{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:18px}
+  html[lang="ar"] .foot-col h5{font-family:var(--arabic);letter-spacing:1px;font-size:13px}
+  .foot-col a,.foot-col p{display:block;color:var(--text-dim);font-size:13px;margin-bottom:10px}
+  .foot-col a:hover{color:var(--gold)}
+  .foot-wa{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:white!important;padding:10px 18px;border-radius:50px;font-weight:600;font-size:12px;margin-top:12px}
+  .foot-wa:hover{background:#1ba550}
+  .copy{padding-top:28px;border-top:1px solid var(--border);display:flex;justify-content:space-between;color:var(--muted);font-size:11px;letter-spacing:.5px}
+  @media(max-width:600px){.copy{flex-direction:column;gap:10px;text-align:center}}
+
+  .fwa{position:fixed;bottom:24px;right:24px;z-index:99;width:60px;height:60px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 12px 32px rgba(37,211,102,.3);transition:transform .3s}
+  html[dir="rtl"] .fwa{right:auto;left:24px}
+  .fwa:hover{transform:scale(1.1) rotate(-6deg)}
+
+  .mobile-menu{position:fixed;inset:0;background:var(--bg);z-index:200;display:none;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:32px}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{color:var(--cream);font-family:var(--serif);font-size:32px;font-style:italic}
+  html[lang="ar"] .mobile-menu a{font-family:var(--arabic);font-style:normal;font-weight:700}
+  .mobile-menu .close{position:absolute;top:24px;right:24px;background:var(--card);border:1px solid var(--border);color:var(--cream);font-size:24px;cursor:pointer;width:46px;height:46px;border-radius:50%}
+  html[dir="rtl"] .mobile-menu .close{right:auto;left:24px}
+
+  /* ADMIN */
+  .page-admin{display:none;min-height:100vh;background:var(--bg);padding:40px 0}
+  body.view-admin > :not(.page-admin){display:none!important}
+  body.view-admin .page-admin{display:block!important}
+  .admin-login{max-width:420px;margin:120px auto;background:var(--card);padding:48px;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);text-align:center;border:1px solid var(--border)}
+  .admin-login img{width:80px;height:80px;border-radius:50%;margin:0 auto 24px}
+  .admin-login h2{font-family:var(--serif);font-size:30px;margin-bottom:12px;color:var(--cream);font-weight:500}
+  .admin-login p{color:var(--text-dim);margin-bottom:24px;font-size:13px}
+  .admin-login input{width:100%;padding:18px 20px;background:var(--bg-2);border:1.5px solid var(--border);border-radius:14px;font-size:20px;margin-bottom:12px;text-align:center;font-weight:700;letter-spacing:6px;color:var(--cream)}
+  .admin-login input:focus{outline:none;border-color:var(--gold)}
+  .admin-login button{width:100%;background:var(--gold);color:var(--bg);border:none;padding:16px;border-radius:50px;font-weight:700;cursor:pointer;letter-spacing:1px;text-transform:uppercase;font-size:12px}
+  .admin-topbar{background:var(--card);border-radius:var(--radius);padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:28px;border:1px solid var(--border)}
+  .admin-topbar img{width:48px;height:48px;border-radius:50%}
+  .admin-topbar .actions{display:flex;gap:8px;flex-wrap:wrap}
+  .admin-topbar .actions button,.admin-topbar .actions a{background:var(--bg-2);color:var(--text);border:1px solid var(--border);padding:10px 16px;border-radius:50px;font-size:12px;font-weight:600}
+  .admin-topbar .actions .exit{background:var(--danger);color:var(--bg);border-color:var(--danger)}
+  .admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+  @media(max-width:900px){.admin-stats{grid-template-columns:repeat(2,1fr)}}
+  .stat-card{background:var(--card);padding:28px;border-radius:var(--radius);border:1px solid var(--border)}
+  .stat-card .label{color:var(--text-dim);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+  .stat-card .value{font-family:var(--serif);font-size:48px;font-weight:600;color:var(--gold);line-height:1}
+  .admin-section{background:var(--card);border-radius:var(--radius);padding:36px;margin-bottom:24px;border:1px solid var(--border)}
+  .admin-section h2{font-family:var(--serif);font-size:26px;font-weight:500;color:var(--cream);margin-bottom:6px}
+  .admin-section .section-sub{color:var(--text-dim);font-size:13px;margin-bottom:24px}
+  .adm-item{background:var(--bg-2);border-radius:var(--radius-sm);padding:20px 24px;margin-bottom:12px;border-left:3px solid var(--gold)}
+  html[dir="rtl"] .adm-item{border-left:none;border-right:3px solid var(--gold)}
+  .adm-item.confirmed{border-left-color:var(--success)}
+  .adm-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+  .adm-info h4{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--cream)}
+  .adm-info .meta-row{font-size:12px;color:var(--text-dim);display:flex;gap:16px;flex-wrap:wrap;margin-top:4px}
+  .adm-status{padding:5px 12px;border-radius:50px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+  .st-new{background:var(--gold-soft);color:var(--gold)}
+  .st-confirmed{background:rgba(126,176,99,.2);color:var(--success)}
+  .adm-detail{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:14px 0;border-top:1px dashed var(--border);margin-bottom:14px}
+  @media(max-width:600px){.adm-detail{grid-template-columns:repeat(2,1fr)}}
+  .adm-detail .f{font-size:10px;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:4px}
+  .adm-detail .v{font-size:13px;color:var(--cream);font-weight:600}
+  .adm-actions{display:flex;gap:6px;flex-wrap:wrap}
+  .adm-btn{background:var(--gold);color:var(--bg);border:none;padding:9px 16px;border-radius:50px;font-size:11px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+  .adm-btn.success{background:var(--success)}
+  .adm-btn.danger{background:transparent;color:var(--danger);border:1px solid var(--danger)}
+  .adm-btn.secondary{background:var(--bg-2);color:var(--text);border:1px solid var(--border)}
+  .admin-tabs{display:flex;gap:4px;margin-bottom:24px;border-bottom:1px solid var(--border)}
+  .adm-tab{background:transparent;border:none;padding:12px 20px;font-size:12px;font-weight:600;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer}
+  .adm-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+  .empty-state{text-align:center;padding:60px 20px;color:var(--text-dim)}
+  .empty-state .ico{font-size:48px;margin-bottom:16px}
+</style>
+</head>
+<body>
+
+<!-- ADMIN -->
+<div class="page-admin">
+  <div class="wrap">
+    <div class="admin-login" id="adminLogin">
+      <img src="assets/logo_circle_small.png" alt="MEDICARE HOMME">
+      <h2>Admin Dashboard</h2>
+      <p>Entre le code d'accès pour consulter les demandes</p>
+      <input type="password" id="adminPass" placeholder="••••" maxlength="10" autofocus>
+      <button onclick="loginAdmin()">Accéder</button>
+    </div>
+    <div id="adminPanel" style="display:none">
+      <div class="admin-topbar">
+        <img src="assets/logo_circle_small.png" alt="">
+        <div class="actions">
+          <button onclick="refreshBookings()">⟳ Actualiser</button>
+          <a href="#top" onclick="location.hash='';location.reload()">← Site</a>
+          <button class="exit" onclick="logoutAdmin()">Déconnexion</button>
+        </div>
+      </div>
+      <div class="admin-stats">
+        <div class="stat-card"><div class="label">Total</div><div class="value" id="stTotal">0</div></div>
+        <div class="stat-card"><div class="label">Cette semaine</div><div class="value" id="stWeek">0</div></div>
+        <div class="stat-card"><div class="label">À traiter</div><div class="value" id="stNew">0</div></div>
+        <div class="stat-card"><div class="label">Confirmées</div><div class="value" id="stConf">0</div></div>
+      </div>
+      <div class="admin-section">
+        <h2>Demandes de rendez-vous</h2>
+        <div class="section-sub">Toutes les demandes reçues du formulaire</div>
+        <div class="admin-tabs">
+          <button class="adm-tab active" onclick="filterTab(this,'all')">Toutes</button>
+          <button class="adm-tab" onclick="filterTab(this,'new')">Nouvelles</button>
+          <button class="adm-tab" onclick="filterTab(this,'confirmed')">Confirmées</button>
+        </div>
+        <div id="bookingsList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="phones">
+      <a href="tel:+213780059099">📞 <span class="ltr">0780 05 90 99</span></a>
+    </div>
+    <a href="https://wa.me/213780059099?text=Bonjour%2C%20je%20souhaite%20des%20informations" class="wa-top">💬 WhatsApp</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo_circle_small.png" alt="MEDICARE HOMME">
+      <div class="brand-text">Medicare Homme<small>by Medicare Clinic</small></div>
+    </a>
+    <div class="nav-links">
+      <a href="#services"><span data-fr>Soins</span><span data-ar>الخدمات</span></a>
+      <a href="#featured"><span data-fr>Technologie</span><span data-ar>التقنية</span></a>
+      <a href="#book"><span data-fr>Rendez-vous</span><span data-ar>احجز</span></a>
+      <a href="#contact"><span data-fr>Contact</span><span data-ar>تواصل</span></a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-switch" onclick="toggleLang()" id="langBtn">العربية</button>
+      <a href="#book" class="nav-cta"><span data-fr>Prendre RDV</span><span data-ar>احجز موعد</span></a>
+      <button class="burger" onclick="document.getElementById('mmenu').classList.add('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mmenu">
+  <button class="close" onclick="document.getElementById('mmenu').classList.remove('open')">✕</button>
+  <a href="#services" onclick="document.getElementById('mmenu').classList.remove('open')"><span data-fr>Soins</span><span data-ar>الخدمات</span></a>
+  <a href="#featured" onclick="document.getElementById('mmenu').classList.remove('open')"><span data-fr>Technologie</span><span data-ar>التقنية</span></a>
+  <a href="#book" onclick="document.getElementById('mmenu').classList.remove('open')"><span data-fr>Rendez-vous</span><span data-ar>احجز موعد</span></a>
+  <a href="#contact" onclick="document.getElementById('mmenu').classList.remove('open')"><span data-fr>Contact</span><span data-ar>تواصل</span></a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-wrap">
+      <div class="hero-text">
+        <span class="eyebrow"><span data-fr>Médecine esthétique · Lasers · Alger</span><span data-ar>طب التجميل · الليزر · الجزائر</span></span>
+        <h1>
+          <span data-fr>Une clinique<br>pensée <em>pour les hommes.</em></span>
+          <span data-ar>عيادة<br>مصممة <em>للرجال.</em></span>
+        </h1>
+        <p class="lead"><span data-fr>Laser Soprano Titanium dernière génération, soins médicaux du visage et détatouage. Un espace exclusivement masculin, discret et premium, à Bordj El Bahri.</span><span data-ar>ليزر سوبرانو تيتانيوم من الجيل الأخير، علاجات طبية للوجه وإزالة الوشم. فضاء حصري للرجال في برج البحري.</span></p>
+        <div class="hero-ctas">
+          <a href="#book" class="btn btn-primary btn-lg"><span data-fr>Prendre rendez-vous</span><span data-ar>احجز موعدك</span></a>
+          <a href="#services" class="btn btn-outline btn-lg"><span data-fr>Découvrir nos soins</span><span data-ar>اكتشف الخدمات</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo"><img src="assets/logo_circle.png" alt="MEDICARE HOMME"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="n">-20%</div><div class="l"><span data-fr>Offre ouverture</span><span data-ar>عرض الافتتاح</span></div></div>
+    <div class="trust-item"><div class="n">Soprano</div><div class="l"><span data-fr>Titanium Laser</span><span data-ar>ليزر تيتانيوم</span></div></div>
+    <div class="trust-item"><div class="n">100%</div><div class="l"><span data-fr>Masculin</span><span data-ar>رجالي</span></div></div>
+    <div class="trust-item"><div class="n">0</div><div class="l"><span data-fr>Douleur</span><span data-ar>ألم</span></div></div>
+  </div>
+</div>
+
+<!-- SERVICES — editorial blocks -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="services-head">
+      <span class="eyebrow"><span data-fr>Nos prestations</span><span data-ar>خدماتنا</span></span>
+      <h2><span data-fr>4 soins médicaux, <em>un seul lieu.</em></span><span data-ar>4 علاجات طبية، <em>مكان واحد.</em></span></h2>
+      <p><span data-fr>Chaque soin est encadré par un protocole médical strict. Tarifs transparents, résultats cliniquement validés.</span><span data-ar>كل علاج يخضع لبروتوكول طبي صارم. أسعار واضحة ونتائج معتمدة طبياً.</span></p>
+    </div>
+
+    <!-- SERVICE 1 : ÉPILATION LASER -->
+    <div class="service-block">
+      <div class="svc-img">
+        <img src="assets/ba_torse.png" alt="Épilation Laser">
+        <span class="svc-tag">Soprano Titanium</span>
+        <span class="svc-num">01</span>
+      </div>
+      <div class="svc-body">
+        <h3><span data-fr>Épilation <em>Laser</em></span><span data-ar>إزالة الشعر <em>بالليزر</em></span></h3>
+        <p><span data-fr>Épilation définitive avec le laser Soprano Titanium (3 longueurs d'onde). Indolore, efficace, pour tous les phototypes et tous types de poils.</span><span data-ar>إزالة شعر دائمة بليزر سوبرانو تيتانيوم. بدون ألم، فعّالة لكل أنواع البشرة والشعر.</span></p>
+        <div class="benefits">
+          <h4><span data-fr>Bénéfices</span><span data-ar>الفوائد</span></h4>
+          <ul>
+            <li><span data-fr>Fin des poils incarnés et irritations du rasage</span><span data-ar>نهاية الشعر الناشب وتهيج الحلاقة</span></li>
+            <li><span data-fr>Traite l'hyperpilosité et la folliculite</span><span data-ar>علاج فرط الشعر والتهاب البصيلات</span></li>
+            <li><span data-fr>Gain de temps au quotidien</span><span data-ar>توفير الوقت اليومي</span></li>
+            <li><span data-fr>Résultats permanents après la cure</span><span data-ar>نتائج دائمة بعد العلاج</span></li>
+          </ul>
+        </div>
+        <div class="svc-price">
+          <span class="l"><span data-fr>À partir de</span><span data-ar>تبدأ من</span></span>
+          <span class="amt"><span class="ltr">3 000</span></span>
+          <span class="pu">DA</span>
+          <span class="pold"><span class="ltr">3 750 DA</span></span>
+        </div>
+        <details class="svc-details">
+          <summary><span data-fr>Voir tous les tarifs (19 zones)</span><span data-ar>عرض كل الأسعار (19 منطقة)</span></summary>
+          <div class="panel">
+            <div class="svc-tabs">
+              <button class="svc-tab active" onclick="switchST(this,'visage')"><span data-fr>Visage</span><span data-ar>الوجه</span></button>
+              <button class="svc-tab" onclick="switchST(this,'corps')"><span data-fr>Corps</span><span data-ar>الجسم</span></button>
+            </div>
+            <div class="svc-tabpanel active" data-sp="visage">
+              <div class="prow"><span class="n"><span data-fr>Pommettes</span><span data-ar>الخدود</span></span><span class="p"><span class="pold ltr">6 250</span><span class="ltr">5 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Traçage de barbe</span><span data-ar>تحديد اللحية</span></span><span class="p"><span class="pold ltr">6 250</span><span class="ltr">5 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Nuque</span><span data-ar>الرقبة</span></span><span class="p"><span class="pold ltr">5 000</span><span class="ltr">4 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Cou</span><span data-ar>العنق</span></span><span class="p"><span class="pold ltr">7 500</span><span class="ltr">6 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Mains / Pieds</span><span data-ar>اليدين / القدمين</span></span><span class="p"><span class="pold ltr">3 750</span><span class="ltr">3 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>★ Pack Visage</span><span data-ar>★ باقة الوجه</span></span><span class="p"><span class="pold ltr">13 750</span><span class="ltr">11 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>★ Pack Visage + Cou</span><span data-ar>★ باقة الوجه + العنق</span></span><span class="p"><span class="pold ltr">20 000</span><span class="ltr">16 000 DA</span></span></div>
+            </div>
+            <div class="svc-tabpanel" data-sp="corps">
+              <div class="prow"><span class="n"><span data-fr>Aisselles</span><span data-ar>الإبطين</span></span><span class="p"><span class="pold ltr">7 500</span><span class="ltr">6 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Épaules</span><span data-ar>الكتفين</span></span><span class="p"><span class="pold ltr">7 500</span><span class="ltr">6 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Avant-bras</span><span data-ar>الساعدين</span></span><span class="p"><span class="pold ltr">8 750</span><span class="ltr">7 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Bras complet</span><span data-ar>الذراعين</span></span><span class="p"><span class="pold ltr">16 875</span><span class="ltr">13 500 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Torse</span><span data-ar>الصدر</span></span><span class="p"><span class="pold ltr">11 250</span><span class="ltr">9 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Ventre</span><span data-ar>البطن</span></span><span class="p"><span class="pold ltr">10 000</span><span class="ltr">8 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Haut du dos</span><span data-ar>أعلى الظهر</span></span><span class="p"><span class="pold ltr">10 000</span><span class="ltr">8 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Bas du dos</span><span data-ar>أسفل الظهر</span></span><span class="p"><span class="pold ltr">8 750</span><span class="ltr">7 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>★ Dos complet</span><span data-ar>★ الظهر بالكامل</span></span><span class="p"><span class="pold ltr">18 750</span><span class="ltr">15 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Cuisse</span><span data-ar>الفخذ</span></span><span class="p"><span class="pold ltr">12 500</span><span class="ltr">10 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>Demi-jambes</span><span data-ar>نصف الساقين</span></span><span class="p"><span class="pold ltr">13 750</span><span class="ltr">11 000 DA</span></span></div>
+              <div class="prow"><span class="n"><span data-fr>★ Jambes complètes</span><span data-ar>★ الساقين بالكامل</span></span><span class="p"><span class="pold ltr">28 750</span><span class="ltr">23 000 DA</span></span></div>
+            </div>
+          </div>
+        </details>
+        <div class="svc-ctas" style="margin-top:20px">
+          <button class="btn btn-primary" onclick="goBook('Épilation Laser')"><span data-fr>Réserver ce soin</span><span data-ar>احجز هذه الخدمة</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 2 : CARBON PEEL -->
+    <div class="service-block rev">
+      <div class="svc-img">
+        <img src="assets/carbon.png" alt="Carbon Peel">
+        <span class="svc-tag">Hollywood Peel</span>
+        <span class="svc-num">02</span>
+      </div>
+      <div class="svc-body">
+        <h3>Carbon <em>Peel</em></h3>
+        <p><span data-fr>Peeling au carbone activé par laser. Pores resserrés, teint unifié, éclat immédiat. Idéal pour peaux grasses, pores dilatés et teints ternes.</span><span data-ar>تقشير بالكربون المنشط بالليزر. مسام مضيقة، لون موحد، إشراقة فورية. مثالي للبشرة الدهنية.</span></p>
+        <div class="benefits">
+          <h4><span data-fr>Bénéfices</span><span data-ar>الفوائد</span></h4>
+          <ul>
+            <li><span data-fr>Nettoyage profond des pores</span><span data-ar>تنظيف عميق للمسام</span></li>
+            <li><span data-fr>Teint plus lumineux et uniforme</span><span data-ar>بشرة أكثر إشراقاً وتوحداً</span></li>
+            <li><span data-fr>Régulation de l'excès de sébum</span><span data-ar>تنظيم إفراز الدهون</span></li>
+            <li><span data-fr>Résultat visible dès la 1ère séance</span><span data-ar>نتيجة فورية من الجلسة الأولى</span></li>
+          </ul>
+        </div>
+        <div class="svc-price">
+          <span class="l"><span data-fr>À partir de</span><span data-ar>تبدأ من</span></span>
+          <span class="amt"><span class="ltr">7 000</span></span>
+          <span class="pu">DA</span>
+          <span class="pold"><span class="ltr">8 750 DA</span></span>
+        </div>
+        <details class="svc-details">
+          <summary><span data-fr>Voir les packs</span><span data-ar>عرض الباقات</span></summary>
+          <div class="panel">
+            <div class="prow"><span class="n"><span data-fr>1 séance</span><span data-ar>جلسة واحدة</span></span><span class="p"><span class="pold ltr">8 750</span><span class="ltr">7 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>★ Pack 3 séances</span><span data-ar>★ باقة 3 جلسات</span></span><span class="p"><span class="pold ltr">22 500</span><span class="ltr">18 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>★ Pack 5 séances</span><span data-ar>★ باقة 5 جلسات</span></span><span class="p"><span class="pold ltr">35 000</span><span class="ltr">28 000 DA</span></span></div>
+          </div>
+        </details>
+        <div class="svc-ctas" style="margin-top:20px">
+          <button class="btn btn-primary" onclick="goBook('Carbon Peel')"><span data-fr>Réserver ce soin</span><span data-ar>احجز هذه الخدمة</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 3 : HYDRA FACIAL -->
+    <div class="service-block">
+      <div class="svc-img">
+        <img src="assets/ba_facial.png" alt="Hydra Facial">
+        <span class="svc-tag">Soin visage complet</span>
+        <span class="svc-num">03</span>
+      </div>
+      <div class="svc-body">
+        <h3>Hydra <em>Facial</em></h3>
+        <p><span data-fr>Soin complet du visage en 4 étapes : nettoyage, exfoliation douce, extraction des impuretés et hydratation profonde. Éclat immédiat.</span><span data-ar>علاج شامل للوجه في 4 خطوات: تنظيف، تقشير، استخلاص، وترطيب عميق. إشراقة فورية.</span></p>
+        <div class="benefits">
+          <h4><span data-fr>Bénéfices</span><span data-ar>الفوائد</span></h4>
+          <ul>
+            <li><span data-fr>Éclat immédiat et peau reposée</span><span data-ar>إشراقة فورية وبشرة منتعشة</span></li>
+            <li><span data-fr>Hydratation profonde et durable</span><span data-ar>ترطيب عميق ودائم</span></li>
+            <li><span data-fr>Pores désincrustés et resserrés</span><span data-ar>مسام نظيفة ومضيقة</span></li>
+            <li><span data-fr>Convient à toutes les peaux</span><span data-ar>يناسب جميع أنواع البشرة</span></li>
+          </ul>
+        </div>
+        <div class="svc-price">
+          <span class="l"><span data-fr>À partir de</span><span data-ar>تبدأ من</span></span>
+          <span class="amt"><span class="ltr">12 000</span></span>
+          <span class="pu">DA</span>
+          <span class="pold"><span class="ltr">15 000 DA</span></span>
+        </div>
+        <details class="svc-details">
+          <summary><span data-fr>Voir les packs</span><span data-ar>عرض الباقات</span></summary>
+          <div class="panel">
+            <div class="prow"><span class="n"><span data-fr>1 séance</span><span data-ar>جلسة واحدة</span></span><span class="p"><span class="pold ltr">15 000</span><span class="ltr">12 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>★ Pack 3 séances</span><span data-ar>★ باقة 3 جلسات</span></span><span class="p"><span class="pold ltr">40 000</span><span class="ltr">32 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>★ Pack 5 séances</span><span data-ar>★ باقة 5 جلسات</span></span><span class="p"><span class="pold ltr">62 500</span><span class="ltr">50 000 DA</span></span></div>
+          </div>
+        </details>
+        <div class="svc-ctas" style="margin-top:20px">
+          <button class="btn btn-primary" onclick="goBook('Hydra Facial')"><span data-fr>Réserver ce soin</span><span data-ar>احجز هذه الخدمة</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE 4 : DÉTATOUAGE -->
+    <div class="service-block rev">
+      <div class="svc-img">
+        <img src="assets/tattoo.png" alt="Détatouage">
+        <span class="svc-tag">Laser Q-Switch</span>
+        <span class="svc-num">04</span>
+      </div>
+      <div class="svc-body">
+        <h3><span data-fr>Détatouage <em>Laser</em></span><span data-ar>إزالة الوشم <em>بالليزر</em></span></h3>
+        <p><span data-fr>Effacement progressif du tatouage avec le laser Q-Switch. Sans cicatrice, efficace sur toutes les couleurs. 4 à 10 séances selon la taille.</span><span data-ar>إزالة الوشم تدريجياً بليزر كيو سويتش. بدون ندوب، فعّال على جميع الألوان. من 4 إلى 10 جلسات.</span></p>
+        <div class="benefits">
+          <h4><span data-fr>Bénéfices</span><span data-ar>الفوائد</span></h4>
+          <ul>
+            <li><span data-fr>Effacement progressif et naturel</span><span data-ar>إزالة تدريجية وطبيعية</span></li>
+            <li><span data-fr>Sans cicatrice, sans éviction</span><span data-ar>بدون ندوب، بدون نقاهة</span></li>
+            <li><span data-fr>Fonctionne sur toutes les couleurs</span><span data-ar>يعمل على جميع الألوان</span></li>
+            <li><span data-fr>Consultation gratuite avant traitement</span><span data-ar>استشارة مجانية قبل العلاج</span></li>
+          </ul>
+        </div>
+        <div class="svc-price">
+          <span class="l"><span data-fr>À partir de</span><span data-ar>يبدأ من</span></span>
+          <span class="amt"><span class="ltr">5 000</span></span>
+          <span class="pu">DA</span>
+          <span class="pold"><span class="ltr">6 250 DA</span></span>
+        </div>
+        <details class="svc-details">
+          <summary><span data-fr>Voir la grille tarifaire</span><span data-ar>عرض شبكة الأسعار</span></summary>
+          <div class="panel">
+            <div class="prow"><span class="n"><span data-fr>Petit (&lt; 5 cm)</span><span data-ar>صغير (أقل من 5 سم)</span></span><span class="p"><span class="pold ltr">6 250</span><span class="ltr">5 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>Moyen (5–10 cm)</span><span data-ar>متوسط (5-10 سم)</span></span><span class="p"><span class="pold ltr">10 000</span><span class="ltr">8 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>Grand (10–20 cm)</span><span data-ar>كبير (10-20 سم)</span></span><span class="p"><span class="pold ltr">18 750</span><span class="ltr">15 000 DA</span></span></div>
+            <div class="prow"><span class="n"><span data-fr>Très grand (&gt; 20 cm)</span><span data-ar>كبير جداً</span></span><span class="p"><span data-fr>Sur devis</span><span data-ar>عرض سعر</span></span></div>
+          </div>
+        </details>
+        <div class="svc-ctas" style="margin-top:20px">
+          <button class="btn btn-primary" onclick="goBook('Détatouage')"><span data-fr>Consultation gratuite</span><span data-ar>استشارة مجانية</span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section id="featured" class="featured">
+  <div class="wrap">
+    <div class="featured-wrap">
+      <div class="featured-img"><img src="assets/machine.png" alt="Soprano Titanium"></div>
+      <div class="featured-text">
+        <span class="eyebrow"><span data-fr>Technologie médicale</span><span data-ar>التقنية الطبية</span></span>
+        <h2><span data-fr>Soprano <em>Titanium.</em></span><span data-ar>سوبرانو <em>تيتانيوم.</em></span></h2>
+        <p><span data-fr>Le seul laser au monde combinant 3 longueurs d'onde (Alex 755 nm, Diode 810 nm, Nd:YAG 1064 nm). Efficace, sûr et indolore sur tous les phototypes et tous types de poils.</span><span data-ar>الجهاز الوحيد الذي يجمع 3 أطوال موجية. فعّال وآمن وبدون ألم لكل أنواع البشرة والشعر.</span></p>
+        <div class="featured-stats">
+          <div class="stat-mini"><div class="n"><span class="ltr">3</span></div><div class="l"><span data-fr>Longueurs d'onde</span><span data-ar>أطوال موجية</span></div></div>
+          <div class="stat-mini"><div class="n"><span class="ltr">100%</span></div><div class="l"><span data-fr>Phototypes</span><span data-ar>أنواع البشرة</span></div></div>
+          <div class="stat-mini"><div class="n"><span class="ltr">0</span></div><div class="l"><span data-fr>Douleur · SHR</span><span data-ar>ألم · SHR</span></div></div>
+          <div class="stat-mini"><div class="n">∞</div><div class="l"><span data-fr>Durables</span><span data-ar>دائمة</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="booking">
+  <div class="wrap">
+    <div class="booking-head">
+      <span class="eyebrow"><span data-fr>Prendre rendez-vous</span><span data-ar>احجز موعد</span></span>
+      <h2><span data-fr>Réserve <em>en ligne.</em></span><span data-ar>احجز <em>أونلاين.</em></span></h2>
+      <p><span data-fr>Remplis le formulaire — notre équipe te rappelle sous 24h pour fixer la date du créneau.</span><span data-ar>املأ الاستمارة — فريقنا يتصل بك خلال 24 ساعة.</span></p>
+    </div>
+
+    <div class="booking-form" id="formWrap">
+      <div id="formAll">
+        <div class="form-row">
+          <label class="label"><span data-fr>Prestation souhaitée *</span><span data-ar>الخدمة المطلوبة *</span></label>
+          <div class="svc-choice">
+            <button type="button" class="sc-btn" onclick="pickService(this,'Épilation Laser')">
+              <div class="nm"><span data-fr>Épilation Laser</span><span data-ar>إزالة الشعر</span></div>
+              <div class="p"><span class="ltr">3 000 DA</span>+</div>
+            </button>
+            <button type="button" class="sc-btn" onclick="pickService(this,'Carbon Peel')">
+              <div class="nm">Carbon Peel</div>
+              <div class="p"><span class="ltr">7 000 DA</span>+</div>
+            </button>
+            <button type="button" class="sc-btn" onclick="pickService(this,'Hydra Facial')">
+              <div class="nm">Hydra Facial</div>
+              <div class="p"><span class="ltr">12 000 DA</span>+</div>
+            </button>
+            <button type="button" class="sc-btn" onclick="pickService(this,'Détatouage')">
+              <div class="nm"><span data-fr>Détatouage</span><span data-ar>إزالة الوشم</span></div>
+              <div class="p"><span class="ltr">5 000 DA</span>+</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-row form-zones" id="zoneBlock">
+          <label class="label"><span data-fr>Zone (optionnel)</span><span data-ar>المنطقة (اختياري)</span></label>
+          <select id="fZone">
+            <option value=""><span data-fr>— À préciser plus tard —</span></option>
+            <optgroup label="Visage · الوجه">
+              <option>Pommettes · الخدود</option>
+              <option>Traçage barbe · تحديد اللحية</option>
+              <option>Nuque · الرقبة</option>
+              <option>Cou · العنق</option>
+              <option>Mains/Pieds · اليدين</option>
+              <option>Pack Visage</option>
+              <option>Pack Visage + Cou</option>
+            </optgroup>
+            <optgroup label="Corps · الجسم">
+              <option>Aisselles · الإبطين</option>
+              <option>Épaules · الكتفين</option>
+              <option>Avant-bras · الساعدين</option>
+              <option>Bras complet · الذراعين</option>
+              <option>Torse · الصدر</option>
+              <option>Ventre · البطن</option>
+              <option>Haut du dos · أعلى الظهر</option>
+              <option>Bas du dos · أسفل الظهر</option>
+              <option>Dos complet · الظهر</option>
+              <option>Cuisse · الفخذ</option>
+              <option>Demi-jambes</option>
+              <option>Jambes complètes</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label class="label"><span data-fr>Nombre de séances (optionnel)</span><span data-ar>عدد الجلسات (اختياري)</span></label>
+          <select id="fSessions">
+            <option value=""><span data-fr>— À déterminer —</span></option>
+            <option value="1 séance"><span data-fr>1 séance</span><span data-ar>جلسة واحدة</span></option>
+            <option value="Pack 3 séances"><span data-fr>Pack 3 séances</span><span data-ar>باقة 3 جلسات</span></option>
+            <option value="Pack 5 séances"><span data-fr>Pack 5 séances</span><span data-ar>باقة 5 جلسات</span></option>
+          </select>
+        </div>
+
+        <div style="height:1px;background:var(--border);margin:24px 0"></div>
+
+        <div class="form-two">
+          <div class="form-row">
+            <label class="label"><span data-fr>Nom complet *</span><span data-ar>الاسم الكامل *</span></label>
+            <input type="text" id="fName" placeholder="Ahmed" required>
+          </div>
+          <div class="form-row">
+            <label class="label"><span data-fr>Téléphone *</span><span data-ar>الهاتف *</span></label>
+            <input type="tel" id="fPhone" placeholder="0555 00 00 00" dir="ltr" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="label"><span data-fr>Message (optionnel)</span><span data-ar>ملاحظة (اختياري)</span></label>
+          <textarea id="fNote" placeholder="..."></textarea>
+        </div>
+
+        <button class="form-submit" onclick="submitBooking()"><span data-fr>Envoyer ma demande</span><span data-ar>إرسال الطلب</span></button>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <div class="check">✓</div>
+        <h3><span data-fr>Demande <em>reçue !</em></span><span data-ar>تم <em>الاستلام !</em></span></h3>
+        <p><span data-fr>Notre équipe te rappelle sous 24h pour fixer la date.</span><span data-ar>نتصل بك خلال 24 ساعة.</span></p>
+        <div class="summary" id="summary"></div>
+        <button class="btn btn-outline" onclick="resetBooking()"><span data-fr>Nouvelle demande</span><span data-ar>طلب آخر</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-head">
+      <span class="eyebrow"><span data-fr>Contact</span><span data-ar>تواصل</span></span>
+      <h2><span data-fr>Une <em>question ?</em></span><span data-ar>عندك <em>سؤال ؟</em></span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="cc">
+        <div class="ico">📞</div>
+        <h4><span data-fr>Appeler</span><span data-ar>اتصل بنا</span></h4>
+        <p><span data-fr>Pour toute question ou renseignement immédiat.</span><span data-ar>لأي سؤال أو استفسار.</span></p>
+        <span class="v ltr">0780 05 90 99</span>
+        <a href="tel:+213780059099" class="btn btn-primary"><span data-fr>Appeler maintenant</span><span data-ar>اتصل الآن</span></a>
+      </div>
+      <div class="cc">
+        <div class="ico">💬</div>
+        <h4><span data-fr>WhatsApp</span><span data-ar>واتساب</span></h4>
+        <p><span data-fr>Réponse rapide et personnalisée par message.</span><span data-ar>رد سريع عبر الرسائل.</span></p>
+        <span class="v ltr">0780 05 90 99</span>
+        <a href="https://wa.me/213780059099?text=Bonjour%2C%20je%20souhaite%20des%20informations" class="btn btn-wa"><span data-fr>Discuter</span><span data-ar>تواصل</span></a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;color:var(--text-dim);font-size:14px">
+      <span data-fr>📍 Bordj El Bahri · Face à la Douane · Alger</span>
+      <span data-ar>📍 برج البحري · مقابل الديوانة · الجزائر</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-txt">
+        <div class="foot-brand">
+          <img src="assets/logo_circle_small.png" alt="MEDICARE HOMME">
+          <div class="btxt">Medicare Homme<small>by Medicare Clinic</small></div>
+        </div>
+        <p><span data-fr>Studio masculin exclusif à Alger. Une division de Medicare Clinic (Dr. Boudabia Wafa).</span><span data-ar>ستوديو رجالي حصري بالجزائر. فرع من مديكير كلينيك.</span></p>
+        <a href="https://wa.me/213780059099" class="foot-wa">💬 WhatsApp · <span class="ltr">0780 05 90 99</span></a>
+      </div>
+      <div class="foot-col">
+        <h5><span data-fr>Navigation</span><span data-ar>التنقل</span></h5>
+        <a href="#services"><span data-fr>Soins</span><span data-ar>الخدمات</span></a>
+        <a href="#featured"><span data-fr>Technologie</span><span data-ar>التقنية</span></a>
+        <a href="#book"><span data-fr>Rendez-vous</span><span data-ar>احجز</span></a>
+        <a href="#contact"><span data-fr>Contact</span><span data-ar>تواصل</span></a>
+      </div>
+      <div class="foot-col">
+        <h5><span data-fr>Contact</span><span data-ar>تواصل</span></h5>
+        <p class="ltr">0780 05 90 99</p>
+        <p><span data-fr>Bordj El Bahri</span><span data-ar>برج البحري</span></p>
+        <p><span data-fr>Face à la Douane, Alger</span><span data-ar>مقابل الديوانة، الجزائر</span></p>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© 2026 MEDICARE HOMME · <span data-fr>By Medicare Clinic</span><span data-ar>فرع مديكير كلينيك</span></div>
+      <div>CONFIDENCE. ALWAYS.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/213780059099?text=Bonjour" class="fwa" aria-label="WhatsApp">💬</a>
+
+<script>
+  window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled', window.scrollY>60)});
+
+  function switchST(btn, which){
+    const parent = btn.closest('.panel');
+    parent.querySelectorAll('.svc-tab').forEach(x=>x.classList.remove('active'));
+    parent.querySelectorAll('.svc-tabpanel').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active');
+    parent.querySelector(`[data-sp="${which}"]`).classList.add('active');
+  }
+
+  function toggleLang(){
+    const html = document.getElementById('html');
+    const nl = html.lang === 'fr' ? 'ar' : 'fr';
+    html.lang = nl;
+    html.dir = nl === 'ar' ? 'rtl' : 'ltr';
+    document.getElementById('langBtn').textContent = nl === 'ar' ? 'Français' : 'العربية';
+    try{localStorage.setItem('mh_lang',nl)}catch(e){}
+  }
+  try{const saved=localStorage.getItem('mh_lang');if(saved && saved!=='fr'){const h=document.getElementById('html');h.lang=saved;h.dir='rtl';document.getElementById('langBtn').textContent='Français'}}catch(e){}
+
+  let selectedService = '';
+  function goBook(service){
+    location.hash = '#book';
+    setTimeout(()=>{
+      resetBooking();
+      document.querySelectorAll('.sc-btn').forEach(b=>{
+        if(b.textContent.includes(service)) pickService(b, service);
+      });
+    }, 150);
+  }
+  function pickService(btn, service){
+    document.querySelectorAll('.sc-btn').forEach(x=>x.classList.remove('selected'));
+    btn.classList.add('selected');
+    selectedService = service;
+    document.getElementById('zoneBlock').classList.toggle('active', service === 'Épilation Laser');
+  }
+  function submitBooking(){
+    if(!selectedService){alert('Choisis une prestation'); return}
+    const name = document.getElementById('fName').value.trim();
+    const phone = document.getElementById('fPhone').value.trim();
+    if(!name){alert('Entre ton nom'); document.getElementById('fName').focus(); return}
+    if(!phone){alert('Entre ton téléphone'); document.getElementById('fPhone').focus(); return}
+
+    const booking = {
+      id: Date.now(), date: new Date().toISOString(), service: selectedService,
+      zone: selectedService === 'Épilation Laser' ? (document.getElementById('fZone').value || 'À préciser') : '',
+      sessions: document.getElementById('fSessions').value || 'À déterminer',
+      note: document.getElementById('fNote').value.trim(),
+      name, phone, status: 'new'
+    };
+    try{
+      const existing = JSON.parse(localStorage.getItem('dermaseo_bookings') || '[]');
+      existing.unshift(booking);
+      localStorage.setItem('dermaseo_bookings', JSON.stringify(existing));
+    }catch(e){}
+
+    const sum = document.getElementById('summary');
+    const lang = document.documentElement.lang;
+    let rows = [[lang==='ar'?'الخدمة':'Prestation', booking.service]];
+    if(booking.zone && booking.zone !== 'À préciser') rows.push([lang==='ar'?'المنطقة':'Zone', booking.zone]);
+    rows.push([lang==='ar'?'الجلسات':'Séances', booking.sessions]);
+    rows.push([lang==='ar'?'الاسم':'Nom', booking.name]);
+    rows.push([lang==='ar'?'الهاتف':'Téléphone', `<span class="ltr">${booking.phone}</span>`]);
+    sum.innerHTML = rows.map(r=>`<div class="r"><span class="k">${r[0]}</span><span class="v">${r[1]}</span></div>`).join('');
+
+    document.getElementById('formAll').style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+  }
+  function resetBooking(){
+    selectedService = '';
+    document.querySelectorAll('.sc-btn').forEach(x=>x.classList.remove('selected'));
+    document.getElementById('zoneBlock').classList.remove('active');
+    ['fZone','fSessions','fNote','fName','fPhone'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('formAll').style.display = 'block';
+    document.getElementById('formSuccess').classList.remove('show');
+  }
+
+  // ADMIN
+  const ADMIN_PASS = '2026';
+  let filter = 'all';
+  function updateRoute(){
+    if(location.hash === '#admin'){
+      document.body.classList.add('view-admin');
+      window.scrollTo(0,0);
+      if(sessionStorage.getItem('dermaseo_admin')==='ok') showAdminPanel();
+    } else document.body.classList.remove('view-admin');
+  }
+  window.addEventListener('hashchange', updateRoute);
+  updateRoute();
+  function loginAdmin(){
+    if(document.getElementById('adminPass').value === ADMIN_PASS){
+      sessionStorage.setItem('dermaseo_admin','ok'); showAdminPanel();
+    } else alert('Code incorrect');
+  }
+  document.getElementById('adminPass')?.addEventListener('keypress', e=>{if(e.key==='Enter')loginAdmin()});
+  function logoutAdmin(){sessionStorage.removeItem('dermaseo_admin'); location.reload()}
+  function showAdminPanel(){
+    document.getElementById('adminLogin').style.display='none';
+    document.getElementById('adminPanel').style.display='block';
+    refreshBookings();
+  }
+  function filterTab(btn,f){
+    document.querySelectorAll('.adm-tab').forEach(x=>x.classList.remove('active'));
+    btn.classList.add('active'); filter=f; refreshBookings();
+  }
+  function refreshBookings(){
+    const list = JSON.parse(localStorage.getItem('dermaseo_bookings') || '[]');
+    const weekAgo = Date.now() - 7*24*60*60*1000;
+    document.getElementById('stTotal').textContent = list.length;
+    document.getElementById('stWeek').textContent = list.filter(b=>new Date(b.date).getTime() > weekAgo).length;
+    document.getElementById('stNew').textContent = list.filter(b=>b.status==='new').length;
+    document.getElementById('stConf').textContent = list.filter(b=>b.status==='confirmed').length;
+    let filtered = filter==='all'?list:list.filter(b=>b.status===filter);
+    const c = document.getElementById('bookingsList');
+    if(filtered.length === 0){c.innerHTML = '<div class="empty-state"><div class="ico">📋</div><p>Aucune demande pour le moment.</p></div>';return}
+    c.innerHTML = filtered.map(b=>{
+      const d = new Date(b.date);
+      const dStr = d.toLocaleDateString('fr-FR') + ' · ' + d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+      const stClass = b.status==='confirmed' ? 'st-confirmed' : 'st-new';
+      const stLabel = b.status==='confirmed' ? 'CONFIRMÉE' : 'NOUVELLE';
+      return `<div class="adm-item ${b.status==='confirmed'?'confirmed':''}">
+        <div class="adm-head">
+          <div class="adm-info">
+            <h4>${esc(b.name)}</h4>
+            <div class="meta-row"><span>📅 ${dStr}</span><span>📞 <span class="ltr">${esc(b.phone)}</span></span></div>
+          </div>
+          <span class="adm-status ${stClass}">${stLabel}</span>
+        </div>
+        <div class="adm-detail">
+          <div><div class="f">Prestation</div><div class="v">${esc(b.service)}</div></div>
+          ${b.zone ? `<div><div class="f">Zone</div><div class="v" style="font-size:12px">${esc(b.zone)}</div></div>` : ''}
+          <div><div class="f">Séances</div><div class="v">${esc(b.sessions)}</div></div>
+          ${b.note ? `<div><div class="f">Note</div><div class="v" style="font-size:12px">${esc(b.note)}</div></div>` : ''}
+        </div>
+        <div class="adm-actions">
+          <a href="tel:${b.phone}" class="adm-btn">📞 Appeler</a>
+          ${b.status==='new' ? `<button class="adm-btn success" onclick="confirmBooking(${b.id})">✓ Confirmer</button>` : `<button class="adm-btn secondary" onclick="markNew(${b.id})">↩ Nouveau</button>`}
+          <button class="adm-btn danger" onclick="deleteBooking(${b.id})">🗑</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+  function confirmBooking(id){const l=JSON.parse(localStorage.getItem('dermaseo_bookings')||'[]');const b=l.find(x=>x.id===id);if(b){b.status='confirmed';localStorage.setItem('dermaseo_bookings',JSON.stringify(l));refreshBookings()}}
+  function markNew(id){const l=JSON.parse(localStorage.getItem('dermaseo_bookings')||'[]');const b=l.find(x=>x.id===id);if(b){b.status='new';localStorage.setItem('dermaseo_bookings',JSON.stringify(l));refreshBookings()}}
+  function deleteBooking(id){if(!confirm('Supprimer ?'))return;const l=JSON.parse(localStorage.getItem('dermaseo_bookings')||'[]').filter(x=>x.id!==id);localStorage.setItem('dermaseo_bookings',JSON.stringify(l));refreshBookings()}
+  function esc(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+</script>
+
+</body>
+</html>
